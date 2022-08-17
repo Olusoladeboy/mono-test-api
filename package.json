@@ -19,7 +19,9 @@
     "precommit": "npm run lint-fix && npm run pretty",
     "prepush": "npm run lint ",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "git": "npm run precommit && git add . && git commit -m",
+    "postgit": "git push origin main"
   },
   "author": "Emmanuel Olusola",
   "license": "Apache-2.0",
